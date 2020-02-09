@@ -9,6 +9,8 @@ export default class Search extends Component {
         results: []
 
     }
+
+
     getInfo = (search) => {
         axios.get('http://localhost:3001/api/v1/users')
             .then(({ data }) => {
