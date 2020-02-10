@@ -13682,3 +13682,3088 @@ Processing by Api::V1::UsersController#index as HTML
 Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 1342)
 
 
+Started GET "/api/v1/users" for ::1 at 2020-02-09 15:45:40 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1342)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-09 15:45:40 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1339)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-09 15:45:40 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1339)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-09 22:19:52 +0700
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 8.3ms | ActiveRecord: 0.7ms | Allocations: 6660)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-09 22:28:30 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1353)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-09 22:28:31 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1356)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-09 22:28:32 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1356)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-09 22:28:36 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1356)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-09 22:28:51 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 1339)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-09 22:29:11 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"Nho", "email"=>"asdn@gmail", "phone"=>"123213", "address"=>"aksjdkasjd", "user"=>{"name"=>"Nho", "email"=>"asdn@gmail", "phone"=>"123213", "address"=>"aksjdkasjd"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Nho"], ["email", "asdn@gmail"], ["phone", 123213], ["address", "aksjdkasjd"], ["created_at", "2020-02-09 15:29:11.211125"], ["updated_at", "2020-02-09 15:29:11.211125"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (14.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 28ms (Views: 0.3ms | ActiveRecord: 18.3ms | Allocations: 2663)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-09 22:29:15 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"wqeqwe", "email"=>"qweqwe", "phone"=>"wqeqwe", "address"=>"qweqwe", "user"=>{"name"=>"wqeqwe", "email"=>"qweqwe", "phone"=>"wqeqwe", "address"=>"qweqwe"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "wqeqwe"], ["email", "qweqwe"], ["phone", 0], ["address", "qweqwe"], ["created_at", "2020-02-09 15:29:15.615818"], ["updated_at", "2020-02-09 15:29:15.615818"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (17.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 21.5ms | Allocations: 2452)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-09 22:29:20 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"wqewqe", "email"=>"qwewqe", "phone"=>"22112", "address"=>"121", "user"=>{"name"=>"wqewqe", "email"=>"qwewqe", "phone"=>"22112", "address"=>"121"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "wqewqe"], ["email", "qwewqe"], ["phone", 22112], ["address", "121"], ["created_at", "2020-02-09 15:29:20.161541"], ["updated_at", "2020-02-09 15:29:20.161541"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (20.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 24.9ms | Allocations: 2452)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-09 22:29:23 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1873)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-09 22:29:37 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-09 22:49:27 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1874)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 09:22:39 +0700
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.7ms | Allocations: 7192)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 09:22:40 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 1888)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 09:22:45 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1888)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 09:22:54 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 1888)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 09:50:34 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 1885)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 09:51:17 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2020-02-10 10:10:52 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2020-02-10 10:12:19 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/users" for ::1 at 2020-02-10 11:15:17 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UsersController#index as */*
+  Parameters: {"name"=>"tuấn11111", "email"=>"abc@gmail", "phone"=>"1123", "address"=>"12 trrr", "user"=>{"name"=>"tuấn11111", "email"=>"abc@gmail", "phone"=>"1123", "address"=>"12 trrr"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 1877)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2020-02-10 13:07:46 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2020-02-10 13:11:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2020-02-10 13:13:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2020-02-10 13:14:05 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2020-02-10 13:15:25 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2020-02-10 13:17:09 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/users" for ::1 at 2020-02-10 13:17:11 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms | Allocations: 1874)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 13:17:17 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 13:17:21 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2020-02-10 13:51:19 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2020-02-10 13:51:19 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2020-02-10 13:51:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/users" for ::1 at 2020-02-10 13:51:35 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 1874)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 13:58:24 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1874)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 13:58:48 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:00:52 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:01:01 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:01:33 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:04:17 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:07:24 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:07:49 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 1873)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:08:07 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:08:11 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:09:09 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:11:09 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:11:13 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:11:13.720628"], ["updated_at", "2020-02-10 07:11:13.720628"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 26ms (Views: 0.3ms | ActiveRecord: 11.1ms | Allocations: 2614)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:11:14 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:11:14.252842"], ["updated_at", "2020-02-10 07:11:14.252842"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 8.7ms | Allocations: 2445)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:11:14 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:11:14.720266"], ["updated_at", "2020-02-10 07:11:14.720266"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.6ms | ActiveRecord: 11.9ms | Allocations: 2443)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:11:14 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:11:14.924621"], ["updated_at", "2020-02-10 07:11:14.924621"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 11.4ms | Allocations: 2439)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:11:15 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:11:15.094135"], ["updated_at", "2020-02-10 07:11:15.094135"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 11.3ms | Allocations: 2439)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:11:15 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:11:15.809199"], ["updated_at", "2020-02-10 07:11:15.809199"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 11.2ms | Allocations: 2407)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:11:15 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (3.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:11:16.022083"], ["updated_at", "2020-02-10 07:11:16.022083"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 11.6ms | Allocations: 2443)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:11:16 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:11:16.188911"], ["updated_at", "2020-02-10 07:11:16.188911"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 17ms (Views: 0.6ms | ActiveRecord: 10.9ms | Allocations: 2439)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:11:17 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:11:17.571877"], ["updated_at", "2020-02-10 07:11:17.571877"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 11.1ms | Allocations: 2443)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:11:18 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 3466)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:11:19 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 3464)
+
+
+Started DELETE "/api/v1/users/19" for ::1 at 2020-02-10 14:11:30 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 19]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 32ms (ActiveRecord: 8.4ms | Allocations: 2866)
+
+
+Started DELETE "/api/v1/users/19" for ::1 at 2020-02-10 14:11:31 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 586)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=19):
+  
+app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Started DELETE "/api/v1/users/19" for ::1 at 2020-02-10 14:11:32 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 613)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=19):
+  
+app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Started DELETE "/api/v1/users/19" for ::1 at 2020-02-10 14:11:32 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 581)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=19):
+  
+app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:11:33 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 3305)
+
+
+Started DELETE "/api/v1/users/24" for ::1 at 2020-02-10 14:11:35 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 24]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 20ms (ActiveRecord: 12.9ms | Allocations: 2214)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:11:35 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 3110)
+
+
+Started DELETE "/api/v1/users/23" for ::1 at 2020-02-10 14:11:36 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 23]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 12.0ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:11:36 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 2935)
+
+
+Started DELETE "/api/v1/users/22" for ::1 at 2020-02-10 14:11:37 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 22]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 20ms (ActiveRecord: 11.5ms | Allocations: 2203)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:11:37 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 2756)
+
+
+Started DELETE "/api/v1/users/21" for ::1 at 2020-02-10 14:11:38 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 21]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 12.1ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:11:38 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 2579)
+
+
+Started DELETE "/api/v1/users/20" for ::1 at 2020-02-10 14:11:38 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 20]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 23ms (ActiveRecord: 12.0ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:11:39 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 1.5ms | Allocations: 2402)
+
+
+Started DELETE "/api/v1/users/18" for ::1 at 2020-02-10 14:11:39 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (3.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 18]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 23ms (ActiveRecord: 12.5ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:11:39 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 2225)
+
+
+Started DELETE "/api/v1/users/17" for ::1 at 2020-02-10 14:11:40 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 21ms (ActiveRecord: 11.2ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:11:41 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 2050)
+
+
+Started DELETE "/api/v1/users/16" for ::1 at 2020-02-10 14:11:41 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 21ms (ActiveRecord: 12.7ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:11:42 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:13:55 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:14:04 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:14:06 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:14:06.723217"], ["updated_at", "2020-02-10 07:14:06.723217"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 11.9ms | Allocations: 2454)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:14:39 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:14:39.500543"], ["updated_at", "2020-02-10 07:14:39.500543"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 12.9ms | Allocations: 2439)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:14:48 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 2227)
+
+
+Started DELETE "/api/v1/users/26" for ::1 at 2020-02-10 14:14:51 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 26]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 12.3ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/25" for ::1 at 2020-02-10 14:14:52 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 25]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 11.4ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:14:53 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:15:46 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:15:46.217341"], ["updated_at", "2020-02-10 07:15:46.217341"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 32ms (Views: 3.5ms | ActiveRecord: 16.7ms | Allocations: 2441)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:15:51 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.4ms | Allocations: 2050)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:16:27 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:16:27.282902"], ["updated_at", "2020-02-10 07:16:27.282902"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (9.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 13.1ms | Allocations: 2439)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:16:38 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:16:38.400324"], ["updated_at", "2020-02-10 07:16:38.400324"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 11.6ms | Allocations: 2439)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:16:42 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 2404)
+
+
+Started DELETE "/api/v1/users/29" for ::1 at 2020-02-10 14:16:44 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 29]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 12.4ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/29" for ::1 at 2020-02-10 14:16:45 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 582)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=29):
+  
+app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Started DELETE "/api/v1/users/28" for ::1 at 2020-02-10 14:16:45 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 28]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 20ms (ActiveRecord: 11.8ms | Allocations: 2201)
+
+
+Started DELETE "/api/v1/users/27" for ::1 at 2020-02-10 14:16:46 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 27]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 20ms (ActiveRecord: 11.8ms | Allocations: 2203)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:16:46 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:19:19 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:19:22 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 14:19:31 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 07:19:31.758114"], ["updated_at", "2020-02-10 07:19:31.758114"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 11.2ms | Allocations: 2439)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:19:36 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 2050)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:19:58 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 2048)
+
+
+Started DELETE "/api/v1/users/30" for ::1 at 2020-02-10 14:20:03 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 30]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 11.4ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:20:16 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:20:48 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:22:31 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:22:35 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:22:41 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:22:48 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:22:53 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:23:03 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 14:23:55 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:00:03 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1874)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:00:05 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:00:21 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:00:23 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:01:09 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:01:09 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:01:24 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:01:26 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:02:23 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1872)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:02:49 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 1873)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:03:33 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:04:04 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:04:36 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:04:48 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:05:07 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:05:41 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:05:53 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:06:28 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:06:35 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:06:35.834234"], ["updated_at", "2020-02-10 08:06:35.834234"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 11.7ms | Allocations: 2439)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:06:37 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 2050)
+
+
+Started DELETE "/api/v1/users/31" for ::1 at 2020-02-10 15:06:38 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 31]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 17ms (ActiveRecord: 11.6ms | Allocations: 2222)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:06:40 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 1873)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:06:51 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:06:51.747441"], ["updated_at", "2020-02-10 08:06:51.747441"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 11.5ms | Allocations: 2441)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:06:55 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 2050)
+
+
+Started DELETE "/api/v1/users/32" for ::1 at 2020-02-10 15:06:56 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 32]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 12.2ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:06:57 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:07:38 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:08:22 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:08:23 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:08:24 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:08:26 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:08:27 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:08:29 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:08:29.199754"], ["updated_at", "2020-02-10 08:08:29.199754"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 22ms (Views: 0.5ms | ActiveRecord: 14.4ms | Allocations: 2439)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:08:30 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 2052)
+
+
+Started DELETE "/api/v1/users/33" for ::1 at 2020-02-10 15:08:31 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 33]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 12.9ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/33" for ::1 at 2020-02-10 15:08:33 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 582)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=33):
+  
+app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:08:33 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1870)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:08:35 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:08:42 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:08:42.676656"], ["updated_at", "2020-02-10 08:08:42.676656"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 11.8ms | Allocations: 2439)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:08:44 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:08:44.039786"], ["updated_at", "2020-02-10 08:08:44.039786"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 11.9ms | Allocations: 2439)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:08:46 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 2227)
+
+
+Started DELETE "/api/v1/users/35" for ::1 at 2020-02-10 15:08:47 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 35]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 17ms (ActiveRecord: 11.4ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/34" for ::1 at 2020-02-10 15:08:48 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 34]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 11.9ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:08:48 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:09:34 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:09:36 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:09:38 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:09:40 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:09:40.416323"], ["updated_at", "2020-02-10 08:09:40.416323"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 13.4ms | Allocations: 2439)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:09:49 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:09:49.704804"], ["updated_at", "2020-02-10 08:09:49.704804"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 13.6ms | Allocations: 2439)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:09:51 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 2227)
+
+
+Started DELETE "/api/v1/users/37" for ::1 at 2020-02-10 15:09:52 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 37]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (18.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 38ms (ActiveRecord: 22.8ms | Allocations: 2203)
+
+
+Started DELETE "/api/v1/users/36" for ::1 at 2020-02-10 15:09:53 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (3.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 36]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 12.3ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:09:53 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:10:31 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:10:33 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:10:45 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.8ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:10:58 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.9ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:11:46 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:11:48 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:11:50 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:11:53 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:11:57 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:12:12 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:12:30 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:12:33 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:12:33 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:12:35 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:12:43 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:12:45 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:12:51 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:13:07 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 1873)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:13:15 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:13:17 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:14:28 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:14:30 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:14:38 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:15:08 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:15:11 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:17:40 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:18:08 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:18:47 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:18:49 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 1871)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:18:51 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:18:51.682540"], ["updated_at", "2020-02-10 08:18:51.682540"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 12.9ms | Allocations: 2407)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:18:56 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:18:56.319373"], ["updated_at", "2020-02-10 08:18:56.319373"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 11.7ms | Allocations: 2405)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:19:02 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:19:02.486190"], ["updated_at", "2020-02-10 08:19:02.486190"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 12.3ms | Allocations: 2439)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:19:03 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:19:03.181254"], ["updated_at", "2020-02-10 08:19:03.181254"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 8.7ms | Allocations: 2439)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:19:03 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:19:03.367657"], ["updated_at", "2020-02-10 08:19:03.367657"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 12.0ms | Allocations: 2439)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:19:08 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:19:08.202036"], ["updated_at", "2020-02-10 08:19:08.202036"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 8.6ms | Allocations: 2439)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:19:09 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 2935)
+
+
+Started DELETE "/api/v1/users/43" for ::1 at 2020-02-10 15:19:14 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 43]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 12.2ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/43" for ::1 at 2020-02-10 15:19:15 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.1ms | Allocations: 582)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=43):
+  
+app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Started DELETE "/api/v1/users/43" for ::1 at 2020-02-10 15:19:15 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.1ms | Allocations: 581)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=43):
+  
+app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Started DELETE "/api/v1/users/43" for ::1 at 2020-02-10 15:19:15 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 581)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=43):
+  
+app/controllers/api/v1/users_controller.rb:21:in `destroy'
+Started DELETE "/api/v1/users/42" for ::1 at 2020-02-10 15:19:16 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 42]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 14ms (ActiveRecord: 7.8ms | Allocations: 2201)
+
+
+Started DELETE "/api/v1/users/41" for ::1 at 2020-02-10 15:19:16 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 41]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 11.9ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/40" for ::1 at 2020-02-10 15:19:17 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 40]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 11.2ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/39" for ::1 at 2020-02-10 15:19:17 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 39]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 12.0ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:19:19 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 2050)
+
+
+Started DELETE "/api/v1/users/38" for ::1 at 2020-02-10 15:19:20 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"38"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 38]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 32ms (ActiveRecord: 17.9ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:19:20 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:19:47 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:19:51 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:20:06 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:20:07 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:21:23 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:23:09 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:23:12 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:23:23 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 15:27:16 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"", "email"=>"", "phone"=>"", "address"=>"", "user"=>{"name"=>"", "email"=>"", "phone"=>"", "address"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["address", ""], ["created_at", "2020-02-10 08:27:16.965857"], ["updated_at", "2020-02-10 08:27:16.965857"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 29ms (Views: 0.6ms | ActiveRecord: 16.9ms | Allocations: 2439)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:36:02 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 2051)
+
+
+Started GET "/create.component.js" for 127.0.0.1 at 2020-02-10 15:54:11 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/create.component.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/App.js" for 127.0.0.1 at 2020-02-10 15:54:11 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/create.component.js" for 127.0.0.1 at 2020-02-10 15:54:11 +0700
+Started GET "/src/index.js" for 127.0.0.1 at 2020-02-10 15:54:11 +0700
+Started GET "/App.js" for 127.0.0.1 at 2020-02-10 15:54:11 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/create.component.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/src/index.js" for 127.0.0.1 at 2020-02-10 15:54:12 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/create.component.js" for 127.0.0.1 at 2020-02-10 15:54:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/create.component.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/App.js" for 127.0.0.1 at 2020-02-10 15:54:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/src/index.js" for 127.0.0.1 at 2020-02-10 15:54:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/create.component.js" for 127.0.0.1 at 2020-02-10 15:54:53 +0700
+Started GET "/App.js" for 127.0.0.1 at 2020-02-10 15:54:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/create.component.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/src/index.js" for 127.0.0.1 at 2020-02-10 15:54:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:56:46 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 2051)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 15:58:59 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.5ms | Allocations: 2048)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:08:07 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 2051)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:08:08 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 2048)
+
+
+Started DELETE "/api/v1/users/44" for ::1 at 2020-02-10 16:08:10 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 44]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 21ms (ActiveRecord: 13.4ms | Allocations: 2222)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:08:12 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.3ms | Allocations: 1873)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:08:20 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"abc", "email"=>"sdsd", "phone"=>"1212", "address"=>"asasas", "user"=>{"name"=>"abc", "email"=>"sdsd", "phone"=>"1212", "address"=>"asasas"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "abc"], ["email", "sdsd"], ["phone", 1212], ["address", "asasas"], ["created_at", "2020-02-10 09:08:20.913156"], ["updated_at", "2020-02-10 09:08:20.913156"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 8.6ms | Allocations: 2451)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:08:26 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 2050)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:19:39 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 2051)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:19:57 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 2048)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:19:58 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 2048)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:05 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:05.766056"], ["updated_at", "2020-02-10 09:20:05.766056"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 12.0ms | Allocations: 2448)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:06 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:06.958729"], ["updated_at", "2020-02-10 09:20:06.958729"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 11.9ms | Allocations: 2448)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:07 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:07.145386"], ["updated_at", "2020-02-10 09:20:07.145386"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 11.6ms | Allocations: 2448)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:07 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:07.302217"], ["updated_at", "2020-02-10 09:20:07.302217"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 11.2ms | Allocations: 2448)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:07 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:07.503094"], ["updated_at", "2020-02-10 09:20:07.503094"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 27ms (Views: 0.8ms | ActiveRecord: 12.4ms | Allocations: 2450)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:07 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:07.713765"], ["updated_at", "2020-02-10 09:20:07.713765"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.7ms | ActiveRecord: 11.4ms | Allocations: 2448)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:07 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:07.934211"], ["updated_at", "2020-02-10 09:20:07.934211"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 11.5ms | Allocations: 2448)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:08 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:08.136992"], ["updated_at", "2020-02-10 09:20:08.136992"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 11.6ms | Allocations: 2448)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:08 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:08.369125"], ["updated_at", "2020-02-10 09:20:08.369125"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 11.5ms | Allocations: 2448)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:08 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:08.612667"], ["updated_at", "2020-02-10 09:20:08.612667"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 11.9ms | Allocations: 2448)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:08 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:08.843996"], ["updated_at", "2020-02-10 09:20:08.843996"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 12.5ms | Allocations: 2414)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:09 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:09.051529"], ["updated_at", "2020-02-10 09:20:09.051529"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 18ms (Views: 0.7ms | ActiveRecord: 11.4ms | Allocations: 2414)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:09 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:09.289237"], ["updated_at", "2020-02-10 09:20:09.289237"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 12.1ms | Allocations: 2448)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:19 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212", "user"=>{"name"=>"12", "email"=>"1212", "phone"=>"121", "address"=>"1212"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "12"], ["email", "1212"], ["phone", 121], ["address", "1212"], ["created_at", "2020-02-10 09:20:19.472346"], ["updated_at", "2020-02-10 09:20:19.472346"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 11.8ms | Allocations: 2448)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:20:24 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 4530)
+
+
+Started DELETE "/api/v1/users/59" for ::1 at 2020-02-10 16:20:29 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 59]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 11.4ms | Allocations: 2222)
+
+
+Started DELETE "/api/v1/users/58" for ::1 at 2020-02-10 16:20:30 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 58]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 20ms (ActiveRecord: 12.2ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/57" for ::1 at 2020-02-10 16:20:31 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"57"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 57]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 12.6ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/56" for ::1 at 2020-02-10 16:20:31 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"56"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 56]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 11.8ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/55" for ::1 at 2020-02-10 16:20:31 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"55"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 55]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 20ms (ActiveRecord: 12.0ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/54" for ::1 at 2020-02-10 16:20:33 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"54"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 54]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 23ms (ActiveRecord: 14.3ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/53" for ::1 at 2020-02-10 16:20:34 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 53]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 11.7ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/52" for ::1 at 2020-02-10 16:20:34 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 52]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 11.3ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/51" for ::1 at 2020-02-10 16:20:34 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 51]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 14ms (ActiveRecord: 7.9ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/50" for ::1 at 2020-02-10 16:20:35 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (3.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 50]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 17ms (ActiveRecord: 11.2ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:20:36 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 3.8ms | ActiveRecord: 4.6ms | Allocations: 2758)
+
+
+Started DELETE "/api/v1/users/49" for ::1 at 2020-02-10 16:20:38 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (3.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 49]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 11.1ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/47" for ::1 at 2020-02-10 16:20:39 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (3.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 47]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 17ms (ActiveRecord: 11.3ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/46" for ::1 at 2020-02-10 16:20:39 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 46]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 12.1ms | Allocations: 2202)
+
+
+Started DELETE "/api/v1/users/48" for ::1 at 2020-02-10 16:20:39 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (4.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 48]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 20ms (ActiveRecord: 11.5ms | Allocations: 2203)
+
+
+Started DELETE "/api/v1/users/45" for ::1 at 2020-02-10 16:20:40 +0700
+Processing by Api::V1::UsersController#destroy as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 45]]
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:22:in `destroy'
+Completed 204 No Content in 14ms (ActiveRecord: 7.9ms | Allocations: 2202)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:20:40 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:20:59 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"sdas", "email"=>"asdsad", "phone"=>"1212", "address"=>"eere", "user"=>{"name"=>"sdas", "email"=>"asdsad", "phone"=>"1212", "address"=>"eere"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "sdas"], ["email", "asdsad"], ["phone", 1212], ["address", "eere"], ["created_at", "2020-02-10 09:20:59.991928"], ["updated_at", "2020-02-10 09:20:59.991928"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 13.0ms | Allocations: 2448)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:21:09 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 2050)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:22:05 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"fg", "email"=>"fgf", "phone"=>"dfd", "address"=>"sdfs", "user"=>{"name"=>"fg", "email"=>"fgf", "phone"=>"dfd", "address"=>"sdfs"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "fg"], ["email", "fgf"], ["phone", 0], ["address", "sdfs"], ["created_at", "2020-02-10 09:22:05.140731"], ["updated_at", "2020-02-10 09:22:05.140731"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 12.4ms | Allocations: 2454)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:22:29 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"fg", "email"=>"fgf", "phone"=>"dfd", "address"=>"sdfs", "user"=>{"name"=>"fg", "email"=>"fgf", "phone"=>"dfd", "address"=>"sdfs"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "fg"], ["email", "fgf"], ["phone", 0], ["address", "sdfs"], ["created_at", "2020-02-10 09:22:29.998875"], ["updated_at", "2020-02-10 09:22:29.998875"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 19ms (Views: 0.7ms | ActiveRecord: 11.6ms | Allocations: 2448)
+
+
+Started POST "/api/v1/users" for ::1 at 2020-02-10 16:23:52 +0700
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"name"=>"sdas", "email"=>"121", "phone"=>"1212", "address"=>"1212", "user"=>{"name"=>"sdas", "email"=>"121", "phone"=>"1212", "address"=>"1212"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "phone", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "sdas"], ["email", "121"], ["phone", 1212], ["address", "1212"], ["created_at", "2020-02-10 09:23:52.585544"], ["updated_at", "2020-02-10 09:23:52.585544"]]
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:8:in `create'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 9.1ms | Allocations: 2451)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:23:55 +0700
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 2581)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-02-10 16:33:54 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 2582)
+
+

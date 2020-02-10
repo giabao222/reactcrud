@@ -18,7 +18,7 @@ export default class Index extends Component {
     componentDidMount() {
         axios.get('http://localhost:3001/api/v1/users')
             .then(response => {
-                this.setState({ users: response.data, display_users: response.data.slice((this.state.activePage - 1) * 20, this.state.activePage * 20) });
+                this.setState({ users: response.data, display_users: response.data.slice((this.state.activePage - 1) * 5, this.state.activePage * 5) });
             })
             .catch(function (error) {
                 console.log(error);
@@ -30,7 +30,7 @@ export default class Index extends Component {
     }
 
     handlePageChange = (pageNumber) => {
-        this.setState({ activePage: pageNumber, display_users: this.state.users.slice((pageNumber - 1) * 20, pageNumber * 20) });
+        this.setState({ activePage: pageNumber, display_users: this.state.users.slice((pageNumber - 1) * 5, pageNumber * 5) });
     }
 
     tabRow() {
@@ -63,9 +63,9 @@ export default class Index extends Component {
                     </tbody>
                     <Pagination
                         activePage={this.state.activePage}
-                        itemsCountPerPage={20}
+                        itemsCountPerPage={5}
                         totalItemsCount={this.state.users.length}
-                        pageRangeDisplayed={this.state.users.length / 20 + 1}
+                        pageRangeDisplayed={this.state.users.length / 5 + 1}
                         onChange={this.handlePageChange}
                     />
                 </table>
